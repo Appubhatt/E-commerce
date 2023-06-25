@@ -1,90 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Processor</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" 
-    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-    <link rel='stylesheet' type='text/css' media='screen' href='/CSS/index.css'>
-</head>
-<body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
-        <div class="container-fluid">
-            <img src="/photos/1.jpg" class="rounded mx-auto d-block" alt="img">
-          <a class="navbar-brand" href="index.html" style="margin-left: 8px;"> Sharma Electrics</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Wishlist</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle"  role="button" data-bs-toggle="dropdown" aria-expanded="true">
-                  Products
-                </a>
-                <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="mouse.html">Mouse</a></li>
-                    <li><a class="dropdown-item" href="processor.html">Processor</a></li>
-                    <li><a class="dropdown-item" href="monitor.html">Monitor</a></li>
-                    <li><a class="dropdown-item" href="/Html/Keyboard.html">Keyboard</a></li>
-                </ul>
-              </li>
-             
-            </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"style="background-color: aliceblue;" >
-              <button class="btn btn-outline-success" type="submit">Search</button>
-              <div class="d-grid gap-2 d-md-block">
-                <button class="btn btn-primary" type="button" id="profile" style="margin-left: 8px;">Profile</button>
-                
-              </div>
-            </form>
-          </div>
-        </div>
-      </nav>
-    <H1>Best sellers</H1>
-    <div class="container">
-        <div class="row">   
-            <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="/photos/processor/Amd5-1.jpg" alt="Card image cap">
-                <div class="card-body">
-                  <h5 class="card-title">AMD Ryzen™ 5</h5>
-                  <p class="card-text">AMD Ryzen™ 5 5600G Desktop Processor (6-core/12-thread, 19MB Cache, up to 4.4 GHz max Boost) with Radeon™ Graphics</p>
-                  <a href="#" class="btn btn-primary">More Info</a>
-                </div>
-            </div>
 
-              <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="/photos/processor/Amd9-1.jpg" alt="Card image cap">
-                <div class="card-body">
-                  <h5 class="card-title">AMD Ryzen™ 9</h5>
-                  <p class="card-text">AMD 7000 Series Ryzen 9 7950X 3D Desktop Processor 16 cores 32 Threads 144 MB Cache 4.2 GHz Upto 5.7 GHz AM5 Socket (100-100000908WOF)</p>
-                  <a href="#" class="btn btn-primary">More Info</a>
-                </div>
-              </div>
-              <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="/photos/processor/intel3-1.jpg" alt="Card image cap">
-                <div class="card-body">
-                  <h5 class="card-title">Intel Core i3</h5>
-                  <p class="card-text">Intel Core i3 12100F 12th Gen Generation Desktop PC Processor 4 CPU with 12MB Cache and up to 4.30 GHz Clock Speed LGA 1700 Socket</p>
-                  <a href="#" class="btn btn-primary">More Info</a>
-                </div>
-              </div>
-              <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="/photos/processor/intel5-1.webp" alt="Card image cap">
-                <div class="card-body">
-                  <h5 class="card-title">Intel Core i5</h5>
-                  <p class="card-text">Intel Core i5-12600KF Desktop Processor 10 (6P+4E) Cores up to 4.9 GHz Unlocked Socket LGA 1700 600 Series Chipset 125W</p>
-                  <a href="#" class="btn btn-primary">More Info</a>
-            </div>      
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Processor</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
+
+  <link rel='stylesheet' type='text/css' media='screen' href='/CSS/index.css'>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+    <div class="container-fluid">
+      <img src="/photos/1.jpg" class="rounded mx-auto d-block" alt="img">
+      <a class="navbar-brand" href="index.html" style="margin-left: 8px;"> Sharma Electronics</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="whishlist.html">Wishlist</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="myOrders.html">My Orders</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="true">
+              Products
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="mouse.html">Mouse</a></li>
+              <li><a class="dropdown-item" href="processor.html">Processor</a></li>
+              <li><a class="dropdown-item" href="monitor.html">Monitor</a></li>
+              <li><a class="dropdown-item" href="/Html/Keyboard.html">Keyboard</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="true">
+              Profile
+            </a>
+            <ul class="dropdown-menu">
+              <p>Welcome</p>
+              <a href="signup-login.html">
+              <button type="button" class="btn btn-primary btn-sm">Signup/Login</button></a>
+              <p>Add A product here</p>
+              <a href="add-product.html">
+                <button type="button" class="btn btn-primary btn-sm">Add a product</button></a>
+            
+            </ul>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"
+            style="background-color: aliceblue;">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
     </div>
-      
+  </nav>
+  <H1>Best sellers</H1>
+  <div class="container">
+    <div class="row">
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="/photos/processor/Amd5-1.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">AMD Ryzen™ 5</h5>
+          <p class="card-text">AMD Ryzen™ 5 5600G Desktop Processor (6-core/12-thread, 19MB Cache, up to 4.4 GHz max
+            Boost) with Radeon™ Graphics</p>
+          <a href="#" class="btn btn-primary">More Info</a>
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="/photos/processor/Amd9-1.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">AMD Ryzen™ 9</h5>
+          <p class="card-text">AMD 7000 Series Ryzen 9 7950X 3D Desktop Processor 16 cores 32 Threads 144 MB Cache 4.2
+            GHz Upto 5.7 GHz AM5 Socket (100-100000908WOF)</p>
+          <a href="#" class="btn btn-primary">More Info</a>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="/photos/processor/intel3-1.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Intel Core i3</h5>
+          <p class="card-text">Intel Core i3 12100F 12th Gen Generation Desktop PC Processor 4 CPU with 12MB Cache and
+            up to 4.30 GHz Clock Speed LGA 1700 Socket</p>
+          <a href="#" class="btn btn-primary">More Info</a>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="/photos/processor/intel5-1.webp" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Intel Core i5</h5>
+          <p class="card-text">Intel Core i5-12600KF Desktop Processor 10 (6P+4E) Cores up to 4.9 GHz Unlocked Socket
+            LGA 1700 600 Series Chipset 125W</p>
+          <a href="#" class="btn btn-primary">More Info</a>
+        </div>
+      </div>
+
 </body>
+
 </html>
