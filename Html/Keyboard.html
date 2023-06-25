@@ -68,7 +68,7 @@
   </nav>
   <H1>Best sellers</H1>
   <div class="container">
-    <div class="row">
+    <div class="row" id = "product-container">
       <div class="card" style="width: 18rem;">
         <img class="card-img-top" src="/photos/Keyboard/keyboard2.jpg" alt="Card image cap">
         <div class="card-body">
@@ -105,6 +105,58 @@
       </div>
     </div>
   </div>
+
+
+
+  <script>
+
+  /*
+    [
+      {
+        "imagesrc": "photos/user/safsa424-keyboard1.jpg",
+        "pname":"keyboard",
+        "pdesc":  "good keyboard"
+      }
+    ]
+  */
+
+    $(document).ready(function(){
+
+        $.ajax({
+            url:,
+            data : ,
+            success : function(resp){
+
+                var json = resp;
+
+                var htmlBuilder = '';
+
+                for(var i = 0; i<json.length; i++){
+                    var jobj = json[i];
+
+                    htmlBuilder += ' <div class="card" style="width: 18rem;"> ';
+                  htmlBuilder += '<img class="card-img-top" src="'+jobj['imagesrc']+'" alt="Card image cap">';
+                    htmlBuilder += '<div class="card-body">';
+                      htmlBuilder += '<h5 class="card-title">'+jobj['pname']+'</h5>';
+                      htmlBuilder += '<p class="card-text">'+jobj['pdesc']+'</p>';
+                      htmlBuilder += '<a href="#" class="btn btn-primary">More Info</a>';
+                    htmlBuilder += '</div>';
+                  htmlBuilder += '</div>';
+
+
+                }
+
+                $("#product-container").html(htmlBuilder);
+
+
+
+            }
+        });
+
+    });
+
+
+</script>
 </body>
 
 </html>
