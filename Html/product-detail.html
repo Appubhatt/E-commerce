@@ -41,19 +41,43 @@
                   <li><a class="dropdown-item" href="/Html/Keyboard.html">Keyboard</a></li>
                 </ul>
               </li>
-    
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="true">
+                  Profile
+                </a>
+                <ul class="dropdown-menu">
+                  <p>Welcome</p>
+                  <a href="signup-login.html">
+                  <button type="button" class="btn btn-primary btn-sm">Signup/Login</button></a>
+                  <p>Add A product here</p>
+                  <a href="add-product.html">
+                    <button type="button" class="btn btn-primary btn-sm">Add a product</button></a>
+                
+                </ul>
+              </li>
             </ul>
             <form class="d-flex" role="search">
               <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"
                 style="background-color: aliceblue;">
               <button class="btn btn-outline-success" type="submit">Search</button>
-              <div class="d-grid gap-2 d-md-block">
-                <button class="btn btn-primary" type="button" id="profile" style="margin-left: 8px;">Profile</button>
-    
-              </div>
             </form>
           </div>
         </div>
       </nav>
+      <div class="container">
+        <img src="/photos/mouse/hp-mouse1.jpg" id="product-image">
+        <div id="product-detail"><br>
+          <h3> <b> <div id="price">&#x20b9; 550</div> </b></h3>
+         
+          <h2 id="title">  HP 150 Wireless Mouse</h2>
+          <p id="mid-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias laborum ipsam deserunt recusandae itaque dolore dolorem minima sed modi officia nostrum quia necessitatibus eaque laudantium quasi praesentium, ducimus minus. Accusantium.</p>
+          <p id="large-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente quia omnis at aspernatur! Assumenda alias cum vero nemo officiis debitis repudiandae eum aliquam, fugiat vitae fuga accusantium eius. Quam eos quo a cumque sit. Quae molestias deserunt voluptatibus nisi dicta quia ratione exercitationem alias quibusdam, laboriosam, dolorum laudantium rerum quo iusto saepe in id, mollitia tempore numquam sapiente eaque voluptatem! Fugit deleniti laborum quas repudiandae numquam culpa. Doloremque enim illo inventore voluptate maxime! Similique, explicabo alias? Vitae, ducimus. Ullam tempore deserunt impedit, sunt dignissimos officiis minus reprehenderit praesentium veritatis magni rem omnis assumenda aut quos debitis iure harum ipsam eius voluptate repellendus, autem perferendis suscipit doloribus quam! Ex atque, illum hic repudiandae natus provident illo non aspernatur officia, autem aliquam voluptatum? Temporibus labore incidunt omnis veritatis ipsa quaerat, sit autem laborum magni vel deserunt, voluptas optio dolorem! Maxime quod architecto voluptas cum animi explicabo necessitatibus eveniet enim, nulla eos deserunt!</p>
+          <input class="btn btn-primary" type="submit" value="Buy"><br><br>
+          <div id="review-section">
+            <textarea id="review" name="review" rows="4" cols="50" placeholder="write a review"></textarea><br>
+            <input class="btn btn-primary" type="submit" value="Submit">
+          </div>
+        </div>
+      </div>
 </body>
 </html>

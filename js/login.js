@@ -14,5 +14,73 @@ $(function() {
 		$(this).addClass('active');
 		e.preventDefault();
 	});
+	$("#login-form").on("submit",function(event){
+		var email = $("#email-login").val();
+		var password = $("#password-login").val()
+		var role = $("input:radio[name='role-login']:checked").val();
+		submitLoginData(email,password,role,event);
+	})
+	$("#register-form").on("submit",function(event){
+		
+		var username = $("#username").val();
+		var email = $("#email").val();
+		var number = $("#number").val();
+		var password = $("#password").val();
+		var role= $("input[name='role-registration']:checked").val();
+
+		submitFunction(username,email,number,password,role,event);
+	})
+
 
 });
+
+function submitFunction(username,email,number,password,role,event){
+	event.preventDefault()
+	var jsonObj = {
+		"name" : username,
+		"email" : email,
+		"mobileNumber":number,
+		"password" : password,
+		"role" : role
+	}
+	$.ajax({
+		data : JSON.stringify(jsonObj),
+		url :"http://localhost:8080/user-register",
+		type : "post",
+		processData : false,
+		contentType : "application/json",
+		success : function(response){
+			console.log(response)
+			alert(response);
+			window.location ="http://127.0.0.1:5500/Html/index.html";
+		},
+		error: function(textStatus){
+			alert(textStatus.responseText);
+		}
+	})
+}
+
+function submitLoginData(email,password,role,event){
+	event.preventDefault();
+	var jsonObj ={
+		"email" : email,
+		"password" : password,
+		"role" : role
+	}
+	$.ajax({
+		data : JSON.stringify(jsonObj),
+		url :"http://localhost:8080/user-login",
+		type : "post",
+		processData : false,
+		contentType : "application/json",
+		success : function(response,errorThorwn){
+			window.location ="http://127.0.0.1:5500/Html/index.html";
+			alert(response)
+			console.log(errorThorwn);
+		},
+		error: function(textStatus){
+			alert(textStatus.responseText);
+			
+		}
+	})
+}
